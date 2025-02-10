@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nature's Wonders</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Verdana', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      text-align: center;
+      padding: 120px;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sunset.jpg');
+      background-size: cover;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #555;
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar .right {
+      background-color: #4CAF50;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+
+    .side {
+      width: 30%;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .side img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .main {
+      width: 63%;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .main img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 30px;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .side, .main {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Nature's Wonders</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#" class="right">Login</a>
+  </div>
+
+  <div class="row">
+    <!-- Side Content -->
+    <div class="side">
+      <h2>Oceans and Reefs</h2>
+      <div class="image">
+        <img src="ocean.jpeg" alt="Ocean">
+      </div>
+      <p>Oceans are home to diverse marine life and essential for global climate. Protecting coral reefs is vital for preserving underwater biodiversity.</p>
+      <h3>Coral Reefs</h3>
+      <div class="image">
+        <img src="coral.jpeg" alt="Coral">
+      <p>Coral reefs are the vibrant jungles of the ocean, providing shelter to countless species. But climate change is threatening them.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h2>Deserts: Life in the Extremes</h2>
+      <div class="image">
+        <img src="DESERT.jfif" alt="Desert">
+      </div>
+      <p>Despite the harsh conditions, deserts are home to a variety of unique life forms. From cacti to desert foxes, they have adapted in amazing ways.</p>
+      <h3>Desert Flora & Fauna</h3>
+      <div class="image">
+        <img src="flora.jpeg" alt="Flora">
+      <p>Many desert plants store water in their leaves, while animals often become nocturnal to avoid the intense daytime heat.</p>
+      </div>
+      <h2>Forests: Earth's Lungs</h2>
+      <div class="image">
+        <img src="forest.jpeg" alt="Forest">
+      </div>
+      <p>Forests provide oxygen, purify air, and stabilize the climate. Rainforests are especially crucial for biodiversity and carbon sequestration.</p>
+      <h3>Rainforests</h3>
+      <div class="image">
+        <img src="rainforest.jpeg" alt="Rainforest">
+      <p>Rainforests are home to millions of species and are vital for controlling the Earth's climate. But they are rapidly disappearing.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Preserve Nature, Preserve Life</h2>
+    <p>Every action counts. Together, we can make a difference in preserving our beautiful planet!</p>
+  </div>
+
+</body>
+</html>
